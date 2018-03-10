@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myForm.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="my-form form-group" id ="form1" method="POST"> 
+                <div class="col-md-2">
+                    <span class="label label-primary" id ="name">Name</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" aria-required="true" id ="text">
+                </div>
+                <div class="col-md-6">
+                    <legend id = "Hero">Favorite hero?</legend>
+                    <input type="checkbox" name = "checkbox1" value="Casey Neistat" id="cb1"> Casey <br/>
+                    <input type="checkbox" name = "checkbox2" value="David Beckham" id = "cb2"> David <br/>
+                    <input type="checkbox" name = "checkbox3" value="Dave Black" > Dave <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="dropdown col-md-6">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Web languages</li>
+                        <li>
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#">JavaScript</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Programming languages</li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">PHP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <button type="submit" class="btn btn-primary" aria-required="true">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

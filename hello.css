@@ -1,0 +1,26 @@
+body {
+    background: rgb(212, 177, 177);
+}
+
+#content {
+    width: 400px;
+    background: #fff;
+    color: aqua;
+    margin: 0 auto;
+
+    /* overflow and max-height properties could hide overflown data than max-height */
+    overflow: hidden;
+    max-height: 250px;
+
+    /* Transparency of data */
+    /* opacity: 0; */
+}
+#content.show {
+    /* opacity: 1; */
+}
+#content.open {
+    max-height: 1000px;
+}
+#show-more {
+    margin-left: 250px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="modal.css" />
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- rel attribute names a relationship of the linked document to the current document -->
+    <script src="modal.js" type="text/JavaScript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!-- 
+Accessible Rich Internet Applications (ARIA) is a set of attributes that define ways to make Web content and Web applications
+(especially those developed with Ajax, JavaScript and more recent web technologies like Bootstrap) more accessible to people
+with disabilities.
+ -->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- If tabindex set to -1, element does not receive tab focus -->
+            <!-- If tabindex set any positive integer or 0 (last enabled),
+                 element will be enabled to recieve tab focus in ascending order -->
+            <button type="button" tabindex="-1" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Launch Modal
+            </button>
+
+            <!-- The aria-label attribute is used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen. If there is visible text labeling the element, use aria-labelledby instead. -->
+            <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <button class="btn btn-primary" id="tooltip" data-toggle="tooltip" data-placement='top' title="Tooltip on top">Tooltip
+                            </button> Modal text goes here...!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
